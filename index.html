@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formosa Trails · Hiking & Travel Spots in Taiwan</title>
+  <meta name="description" content="A simple guide to hiking and travel spots in Taiwan: what to do, what to eat, how to get there, and when to go.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Formosa <span>Trails</span></a>
+    <nav><a href="#spots">All spots</a><a href="#about">About</a></nav>
+  </div>
+</header>
+
+<section class="home-hero">
+  <div class="wrap">
+    <h1>Hike, eat &amp; explore Taiwan</h1>
+    <p>One page per place: what to do, what to eat, how to get there by public transport, and the best months to go. Plan a day trip from a single page.</p>
+    <span class="hero-stat">🏞️ <span id="spot-count">0</span> spots and growing</span>
+  </div>
+</section>
+
+<main class="wrap" id="spots">
+
+  <div class="filters">
+    <div class="filter-group">
+      <span class="label">Region</span>
+      <button class="filter-btn active" data-group="region" data-value="All">All</button>
+      <button class="filter-btn" data-group="region" data-value="North">North</button>
+      <button class="filter-btn" data-group="region" data-value="Central">Central</button>
+      <button class="filter-btn" data-group="region" data-value="South">South</button>
+      <button class="filter-btn" data-group="region" data-value="East">East</button>
+      <button class="filter-btn" data-group="region" data-value="Islands">Islands</button>
+    </div>
+    <div class="filter-group">
+      <span class="label">Difficulty</span>
+      <button class="filter-btn active" data-group="difficulty" data-value="All">All</button>
+      <button class="filter-btn" data-group="difficulty" data-value="Easy">Easy</button>
+      <button class="filter-btn" data-group="difficulty" data-value="Moderate">Moderate</button>
+      <button class="filter-btn" data-group="difficulty" data-value="Hard">Hard</button>
+    </div>
+  </div>
+
+  <div class="cards">
+      <!-- SPOTS:START (one card per spot, north → south → east; see AGENTS.md §6) -->
+      <a class="card" href="spots/elephant-mountain.html"
+         data-region="North" data-difficulty="Easy">
+        <div class="card-img">
+          <img src="images/elephant-mountain/hero.jpg" alt="Elephant Mountain" loading="lazy"
+               onerror="this.parentElement.classList.add('missing')">
+        </div>
+        <div class="card-body">
+          <p class="card-region">North · Easy</p>
+          <h3>Elephant Mountain <span lang="zh-Hant">象山</span></h3>
+          <p>A short, steep stair climb from the MRT to the classic view of Taipei 101.</p>
+          <ul class="tags"><li>Hiking</li><li>City</li></ul>
+        </div>
+      </a>
+      <a class="card" href="spots/yangmingshan-qixingshan.html"
+         data-region="North" data-difficulty="Moderate">
+        <div class="card-img">
+          <img src="images/yangmingshan-qixingshan/hero.jpg" alt="Yangmingshan & Qixingshan" loading="lazy"
+               onerror="this.parentElement.classList.add('missing')">
+        </div>
+        <div class="card-body">
+          <p class="card-region">North · Moderate</p>
+          <h3>Yangmingshan & Qixingshan <span lang="zh-Hant">陽明山・七星山</span></h3>
+          <p>Steaming volcanic vents, grassy hills and the highest peak in Taipei, all reachable by city bus.</p>
+          <ul class="tags"><li>Hiking</li><li>Mountain</li><li>Hot Spring</li></ul>
+        </div>
+      </a>
+      <a class="card" href="spots/jiufen-teapot-mountain.html"
+         data-region="North" data-difficulty="Moderate">
+        <div class="card-img">
+          <img src="images/jiufen-teapot-mountain/hero.jpg" alt="Jiufen & Teapot Mountain" loading="lazy"
+               onerror="this.parentElement.classList.add('missing')">
+        </div>
+        <div class="card-body">
+          <p class="card-region">North · Moderate</p>
+          <h3>Jiufen & Teapot Mountain <span lang="zh-Hant">九份・茶壺山</span></h3>
+          <p>Lantern-lit old streets in the hills, then a rocky ridge walk above the sea.</p>
+          <ul class="tags"><li>Hiking</li><li>Old Street</li><li>Coast</li></ul>
+        </div>
+      </a>
+      <a class="card" href="spots/sun-moon-lake.html"
+         data-region="Central" data-difficulty="Easy">
+        <div class="card-img">
+          <img src="images/sun-moon-lake/hero.jpg" alt="Sun Moon Lake" loading="lazy"
+               onerror="this.parentElement.classList.add('missing')">
+        </div>
+        <div class="card-body">
+          <p class="card-region">Central · Easy</p>
+          <h3>Sun Moon Lake <span lang="zh-Hant">日月潭</span></h3>
+          <p>Taiwan's largest lake, best seen by bike, by boat and from the cable car.</p>
+          <ul class="tags"><li>Lake</li><li>Hiking</li></ul>
+        </div>
+      </a>
+      <a class="card" href="spots/alishan.html"
+         data-region="South" data-difficulty="Moderate">
+        <div class="card-img">
+          <img src="images/alishan/hero.jpg" alt="Alishan" loading="lazy"
+               onerror="this.parentElement.classList.add('missing')">
+        </div>
+        <div class="card-body">
+          <p class="card-region">South · Moderate</p>
+          <h3>Alishan <span lang="zh-Hant">阿里山</span></h3>
+          <p>Sunrise over a sea of clouds, giant ancient trees and a mountain railway.</p>
+          <ul class="tags"><li>Mountain</li><li>Forest</li><li>Hiking</li></ul>
+        </div>
+      </a>
+      <!-- SPOTS:END -->
+  </div>
+  <p class="empty-msg">No spots match these filters yet. Try another region or difficulty.</p>
+
+  <section class="about" id="about">
+    <h2>About this project</h2>
+    <p>Formosa Trails is a student project for a Generative AI course. The site is built with an AI coding agent that follows a rulebook, <a href="AGENTS.md">AGENTS.md</a>, which describes the page template, naming rules, style guide and writing style. Adding a new place is as simple as asking the AI: <em>"Add Kenting following AGENTS.md."</em></p>
+    <p>Every spot page answers the same five questions:</p>
+    <ol>
+      <li><strong>What to do</strong> there</li>
+      <li><strong>What to eat</strong> there</li>
+      <li><strong>How to get there</strong>, starting from Taipei Main Station</li>
+      <li><strong>When to go</strong>, shown on a month-by-month strip</li>
+      <li><strong>What it looks like</strong>, with a photo gallery</li>
+    </ol>
+    <p class="note">Information was last checked in November 2026. Transport and opening times change, so always confirm on official websites before you go.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Formosa Trails · A student project for exploring Taiwan · Built with HTML, CSS &amp; an AGENTS.md rulebook</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
